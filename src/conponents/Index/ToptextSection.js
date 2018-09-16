@@ -14,13 +14,22 @@ const Topic = styled.h1`
   font-size: 5em;
 `;
 class ToptextSection extends React.Component{
+    state = {position: 0}
+    componentDidMount(){
+        setInterval(()=>{
+            this.setState({position: this.state.position+1});
+            if(this.state.position>2){
+                this.setState({position:0});
+            }
+        },2000);
+    }
     render(){
         return(
             <Fragment>
                 <Container>
                 <Landing >
                     <Topic>I LOVE TO MAKE</Topic>
-                    <Topic>{slideElement[0]}</Topic>
+                    <Topic>{slideElement[this.state.position]}</Topic>
                     <Topic>LOOK AWESOME</Topic>
                 </Landing>
                 </Container>
