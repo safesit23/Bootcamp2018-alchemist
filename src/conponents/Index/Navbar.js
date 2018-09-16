@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Navbar=()=>(
-    <div style={{height:'50px',width:'auto',backgroundColor:'red'}}>
-        test
+    <div>
+        <div>Test Nav</div>
     </div>
 );
 export default Navbar;
