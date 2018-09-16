@@ -21,13 +21,13 @@ const ProjectSection = ()=>(
     <Container >
     <Row>
         {
-            [1,2,3,4,5,6].map(value => (
-                <Col lg={4} className='d-flex justify-content-center'>
-                    <Image className='mx-2' src={imagesrc} alt='pic' />
+            [1,2,3,4,5,6].map((value,i) => (
+                <Col key={value+i} lg={3} className='d-flex justify-content-center'>
+                    <Image className='mx-2 my-2' src={imagesrc} alt='pic' />
                 </Col>
             ))
         }
-        
+
     </Row>
     </Container>
 </Landing>
