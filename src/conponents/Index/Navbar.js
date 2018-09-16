@@ -11,6 +11,7 @@ const link = {
 
 const Landing = styled.div`
  background-image: url('/static/images/top-bar-bg.png');
+ background-repeat: repeat-x;
 `;
 
 const Linkstyle = styled.div`
